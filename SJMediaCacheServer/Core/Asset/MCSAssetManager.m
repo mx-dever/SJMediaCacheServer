@@ -119,6 +119,7 @@
     MCSAssetType type = [MCSURL.shared assetTypeForURL:proxyURL];
     NSMutableURLRequest *request = [proxyRequest mcs_requestWithRedirectURL:URL];
     id<MCSAssetReader> reader = nil;
+//# TODO check type is equal to asset
     switch ( type ) {
         case MCSAssetTypeFILE: {
             FILEAsset *asset = [self assetWithURL:proxyURL];
